@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale 2016 Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="540" height="960"></canvas>
+        <div id="ui-layer">
+            <div id="top-bar">
+                <div id="opponent-name">IA (Entraîneur)</div>
+                <div id="time-display">03:00</div>
+            </div>
+
+            <div id="message-overlay" class="hidden">
+                <h1 id="message-text"></h1>
+            </div>
+
+            <div id="bottom-bar">
+                <div id="current-elixir-display">
+                    <div id="elixir-bar-fill"></div>
+                    <span id="elixir-count">5</span>
+                </div>
+                <div id="cards-container">
+                    <!-- Les cartes seront injectées ici par JS -->
+                </div>
+                <div id="next-card-container">
+                    <span>Suivante:</span>
+                    <div id="next-card"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/constants.js"></script>
+    <script src="js/entities.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
